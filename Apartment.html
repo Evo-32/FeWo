@@ -21,11 +21,18 @@
   </head>
   <body>
     <header>
-        <img src="./images/logo.svg" alt="logo" class="logo" />
+      <img src="./images/logo.svg" alt="logo" class="logo" />
       <nav>
         <ul>
-          <li class="download"><button><a href="#app">Download the app <span><i class="fa-solid fa-download"></i></span></a></button></li>
-          <li ><a href="#planner">planner</a></li>
+          <li class="download">
+            <button>
+              <a href="#app"
+                >Download the app
+                <span><i class="fa-solid fa-download"></i></span
+              ></a>
+            </button>
+          </li>
+          <li><a href="#planner">Travel planner</a></li>
           <li><a href="#registeraccomodation">Register accomodation</a></li>
           <li><a href="help">Help</a></li>
           <li><a href="#travel">My Travel</a></li>
@@ -34,66 +41,89 @@
       </nav>
     </header>
 
-    <div>
-      <img src="" alt="" />
-      <h2>The whole accomodation just for you</h2>
-      <form method="get">
-        <div>
-          <input type="text" />
-          <i></i>
-          <h5>Wo soll's hingehen?</h5>
+    <div class="search-container">
+      <h1>The whole accommodation just for you</h1>
+      <form method="get" class="search-form">
+        <!-- Destination -->
+        <div class="search-box">
+          <i class="fa-solid fa-location-pin"></i>
+          <div class="text-content">
+            <label>Where should we go?</label>
+          </div>
         </div>
-        <div>
-          <input type="date" />
-          <i></i>
-          <h6>Date</h6>
-          <h5>Wo soll's hingehen?</h5>
+
+        <!-- Dates -->
+        <div class="search-box">
+          <i class="fa-solid fa-calendar-week"></i>
+          <div class="text-content">
+            <label>Date</label>
+            <span>July 5 - July 19</span>
+          </div>
         </div>
-        <div>
-          <input type="text" />
-          <i></i>
-          <h6>Gaste</h6>
-          <h5>2 Reisend</h5>
+
+        <!-- Guests -->
+        <div class="search-box">
+          <i class="fa-solid fa-user"></i>
+          <div class="text-content">
+            <label>Guests</label>
+            <span>2 travelers</span>
+          </div>
         </div>
-        <button>Suchen</button>
+
+        <!-- Button -->
+        <button type="submit" class="seek-button">Seek</button>
       </form>
     </div>
 
-    <div>
-      <i></i>
-      <p>
-        Melde dich an, um dem Gastgeber eine Nachricht zu schicken und mehr
-        Details zu einer <br />
-        Unterkunft zu erhalten.
+    <!-- Banner component -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <div class="cta-banner">
+      <!-- icon bubble -->
+      <span class="cta-icon">
+        <i class="fa-regular fa-message"></i>
+      </span>
+
+      <!-- main message -->
+      <p class="cta-text">
+        Sign in to send a message to the host and get more details about a
+        listing.
       </p>
-      <button>Anmeleden</button>
+
+      <!-- action button -->
+      <button class="cta-btn">Register</button>
     </div>
 
-    <div>
-      <h1>Find accomadations to suit your taste</h1>
-      <div>
-        <img src="" alt="holiday home" />
-        <h5>holiday home</h5>
-      </div>
-      <div>
-        <img src="" alt="holiday apartment" />
-        <h5>holiday home</h5>
-      </div>
-      <div>
-        <img src="" alt="holiday cottage" />
-        <h5>holiday home</h5>
-      </div>
-      <div>
-        <img src="" alt="country house" />
-        <h5>holiday home</h5>
-      </div>
-      <div>
-        <img src="" alt="villa" />
-        <h5>holiday home</h5>
-      </div>
-      <div>
-        <img src="" alt="chalet" />
-        <h5>holiday home</h5>
+    <div class="slider-section">
+      <h1>Find accommodations to suit your taste</h1>
+      <div class="card-slider">
+        <div class="card">
+          <img src="./images/country house.jpg" alt="holiday home" />
+          <h5>holiday home</h5>
+        </div>
+        <div class="card">
+          <img src="./images/holiday apartment.jpg" alt="holiday apartment" />
+          <h5>holiday apartment</h5>
+        </div>
+        <div class="card">
+          <img src="./images/holiday home.jpg" alt="holiday cottage" />
+          <h5>holiday cottage</h5>
+        </div>
+        <div class="card">
+          <img src="./images/holiday cottage.jpg" alt="country house" />
+          <h5>country house</h5>
+        </div>
+        <div class="card">
+          <img src="./images/villa.jpg" alt="villa" />
+          <h5>villa</h5>
+        </div>
+        <div class="card">
+          <img src="./images/chalet.jpg" alt="chalet" />
+          <h5>chalet</h5>
+        </div>
       </div>
     </div>
 
@@ -101,11 +131,19 @@
       <h1>Browse weekend trips</h1>
       <h4>offers for the period:July 25-27</h4>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -128,11 +166,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -155,11 +201,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -182,11 +236,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -209,11 +271,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -236,11 +306,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -263,11 +341,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -290,11 +376,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -317,11 +411,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -344,11 +446,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -371,11 +481,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -398,11 +516,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -425,11 +551,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -452,11 +586,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -479,11 +621,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -506,11 +656,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -533,11 +691,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -560,11 +726,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -587,11 +761,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -614,11 +796,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -641,11 +831,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -668,11 +866,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -695,11 +901,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -722,11 +936,19 @@
         </div>
       </div>
       <div>
-        <div>
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
-          <img src="" alt="houses" />
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="./images/holiday home.jpg" alt="houses" id="slide-1" />
+              <img
+                src="./images/holiday cottage.jpg"
+                alt="houses"
+                id="slide-2"
+              />
+              <img src="./images/chalet.jpg" alt="houses" id="slide-3" />
+              <img src="./images/country house.jpg" alt="houses" id="slide-4" />
+            </div>
+          </div>
         </div>
         <div>
           <p>9.0</p>
@@ -1410,43 +1632,57 @@
       </form>
     </div>
 
-    <div>
-      <p></p>
-      <div>
-        <h5></h5>
-        <a href></a>
-        <a href></a>
-        <a href></a>
-        <a href></a>
-        <a href></a>
+    <div class="all">
+      <img src="./images/logo.svg" alt="logo" />
+      <div class="setionlast">
+        <p class="sectionlp">Explore FeWo-direct</p>
+        <ul class="lastlist">
+          <li class="lastline"><a href="">Advertise accomadations</a></li>
+          <li class="lastline"><a href="">Book with confidence</a></li>
+          <li class="lastline"><a href="">Trust and security</a></li>
+          <li class="lastline"><a href="">Resource for partners</a></li>
+          <li class="lastline">
+            <a href="">Holiday homes and holiday inspirations</a>
+          </li>
+        </ul>
       </div>
-      <div>
-        <h5></h5>
-        <a href></a>
-        <a href></a>
-        <a href></a>
-        <a href></a>
-        <a href></a>
-        <a href></a>
-        <a href></a>
-        <a href></a>
-        <a href></a>
-        <a href></a>
+      <div class="setionlast">
+        <p class="sectionlp">Pursue</p>
+        <ul class="lastlist">
+          <li class="lastline"><a href="">About us</a></li>
+          <li class="lastline"><a href="">Career</a></li>
+          <li class="lastline"><a href="">Affiliate partner</a></li>
+          <li class="lastline"><a href="">Press</a></li>
+          <li class="lastline">
+            <a href="">General terms and conditions of business</a>
+          </li>
+          <li class="lastline"><a href="">Privacy policy</a></li>
+          <li class="lastline"><a href="">Cookie statement</a></li>
+          <li class="lastline"><a href="">Reporting illegal content</a></li>
+          <li class="lastline"><a href="">Legal notice/contact</a></li>
+          <li class="lastline"><a href="">Responsible owner</a></li>
+          <li class="lastline">
+            <a href="">Content guidelines and reporting content</a>
+          </li>
+        </ul>
       </div>
-      <div>
-        <h5></h5>
-        <a href></a>
-        <a href></a>
-        <a href></a>
-        <a href></a>
-        <a href></a>
+      <div class="setionlast">
+        <p class="sectionlp">The Vrbo family</p>
+        <ul class="lastlist">
+          <li class="lastline"><a href="">Vrbo</a></li>
+          <li class="lastline"><a href="">Abritel.fr</a></li>
+          <li class="lastline"><a href="">FeWo-direct.de</a></li>
+          <li class="lastline"><a href="">Bookabach.co.nz</a></li>
+          <li class="lastline"><a href="">Stay.com.au</a></li>
+        </ul>
       </div>
     </div>
+
     <footer>
       <p>
-        &COPY;2025 FeWo-direkt, ein Unternehmen der Expedia Group. Alle Rechte
-        vorbehalten. FeWo-direkt und das FeWo-direkt-Logo sind Handelsmarken
-        oder eingetragene Handelsmarken von HomeAway.com, Inc.
+        &COPY; 2025 HomeAway, an Expedia Group company. All rights reserved.
+        HomeAway and the HomeAway logo are trademarks or registered trademarks
+        of HomeAway.com, Inc.
       </p>
     </footer>
   </body>
