@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <meta
+      http-equiv="refresh"
+      content="1"
+      ;
+      url="C:\Users\user\OneDrive\Documents\Tailwind\index.html"
+    />
+  </head>
+  <body>
+    <header class="flex justify-between items-center p-5 bg-white">
+      <img src="./images/logo.png" class="h-3 md:h-10" />
+
+      <nav class="hidden lg:flex">
+        <ul class="flex gap-7 text-center text-sm font-medium">
+          <li class="border rounded-2xl border-gray-300 px-3">
+            Download the app<span>
+              <i class="fa-solid fa-download text-blue-400 text-sm"></i
+            ></span>
+          </li>
+          <li>Travel planner</li>
+          <li>Register accomodation</li>
+          <li>Help</li>
+          <li>My travels</li>
+          <li>Register</li>
+        </ul>
+      </nav>
+      <div class="lg:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <div class="relative">
+      <img
+        src="./images/background.avif"
+        class="h-130 w-full object-cover brightness-75"
+      />
+
+      <div class="absolute inset-0 flex flex-col justify-center px-16">
+        <h1 class="text-white font-bold mb-6 text-2xl md:text-4xl">
+          The entire accommodation just for you
+        </h1>
+
+        <div
+          class="flex flex-col md:flex-row items-center bg-white rounded-2xl p-4 gap-3"
+        >
+          <div
+            class="flex items-center gap-2 flex-1 border border-gray-400 rounded-sm p-1 h-12 w-40"
+          >
+            <i class="fa-solid fa-location-dot text-gray-500"></i>
+            <p class="text-gray-600 text-xs md:text-sm">Where should we go?</p>
+          </div>
+
+          <div
+            class="flex items-center gap-2 border border-gray-400 flex-1 rounded-sm p-1 h-12 w-40"
+          >
+            <i class="fa-solid fa-calendar-day text-gray-500"></i>
+            <div class="flex flex-col">
+              <p class="text-gray-500 text-xs md:text-sm">Date</p>
+              <p class="text-gray-700 text-xs md:text-sm">Aug 30 - Sept 13</p>
+            </div>
+          </div>
+
+          <div
+            class="flex items-center gap-2 flex-1 border border-gray-400 rounded-sm p-1 h-12 w-40"
+          >
+            <i class="fa-solid fa-user text-gray-500"></i>
+            <div class="flex flex-col">
+              <p class="text-gray-500 text-xs md:text-sm">Guests</p>
+              <p class="text-gray-700 text-xs md:text-sm">2 Travelers</p>
+            </div>
+          </div>
+
+          <button
+            class="bg-blue-600 rounded-full px-15 py-2 text-white font-semibold md:px-6"
+          >
+            Seek
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10 flex justify-center px-5 items-center">
+      <div
+        class="bg-blue-950 flex flex-col md:flex-row justify-between p-4 rounded-2xl w-64 md:w-full md:max-w-6xl space-y-4"
+      >
+        <div class="flex items-center text-lg font-semibold gap-2">
+          <span class="bg-sky-400 h-10 w-10 rounded-full">
+            <i class="fa-solid fa-message text-xl text-white px-3 py-3"></i>
+          </span>
+          <p class="text-white text-base">
+            Sign in to send a message to the host and get more details about a
+            listing.
+          </p>
+        </div>
+        <button class="bg-blue-500 text-sm text-white rounded-full p-3">
+          Register
+        </button>
+      </div>
+    </div>
+
+    <div class="mt-7 flex flex-col md:flex-row gap-5 px-10">
+      <div class="flex rounded-xl overflow-hidden shadow-lg">
+        <div class="bg-blue-600 p-6 flex flex-col justify-center h-30 w-64">
+          <p class="text-white font-semibold text-base leading-snug">
+            Last-minute deals for thousands of accommodations
+          </p>
+          <a
+            href="#"
+            class="text-white flex items-center text-sm font-semibold"
+          >
+            Book now <i class="fa-solid text-sm fa-arrow-right px-1"></i>
+          </a>
+        </div>
+        <div class="h-30 w-64">
+          <img
+            src="./images/1.jpg"
+            class="w-full h-full object-cover overflow-hidden"
+          />
+        </div>
+      </div>
+
+      <div class="flex rounded-xl overflow-hidden shadow-lg">
+        <div class="bg-blue-600 p-6 flex flex-col justify-center h-30 w-64">
+          <p class="text-white font-semibold text-base leading-snug">
+            However to save this summer
+          </p>
+          <a
+            href="#"
+            class="text-white flex items-center text-sm font-semibold"
+          >
+            Book now <i class="fa-solid text-sm fa-arrow-right px-1"></i>
+          </a>
+        </div>
+        <div class="h-30 w-64">
+          <img
+            src="./images/1.jpg"
+            class="w-full h-full object-cover overflow-hidden"
+          />
+        </div>
+      </div>
+
+      <div class="flex rounded-xl overflow-hidden shadow-lg">
+        <div class="bg-blue-600 p-6 flex flex-col justify-center h-30 w-64">
+          <p class="text-white font-semibold text-base leading-snug">
+            A weekend can be full of holiday memories
+          </p>
+          <a
+            href="#"
+            class="text-white text-sm flex items-center font-semibold"
+          >
+            Book now <i class="fa-solid fa-arrow-right px-1"></i>
+          </a>
+        </div>
+        <div class="h-30 w-64">
+          <img
+            src="./images/1.jpg"
+            class="w-full h-full object-cover overflow-hidden"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-7 px-10">
+      <h1 class="text-base md:text-3xl text-blue-950 font-semibold">
+        Find accomodations to suit your taste
+      </h1>
+      <div class="mt-5 grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-5">
+        <div class="relative h-86">
+          <img
+            src="./images/holiday home.jpg"
+            class="rounded-2xl h-full w-full"
+          />
+          <p class="text-white absolute bottom-0 left-0 p-2 font-semibold">
+            Holiday home
+          </p>
+        </div>
+        <div class="relative h-86">
+          <img
+            src="./images/holiday apartment.jpg"
+            class="rounded-2xl h-full w-full"
+          />
+          <p class="text-white absolute bottom-0 left-0 p-2 font-semibold">
+            Holiday apartment
+          </p>
+        </div>
+        <div class="relative h-86">
+          <img
+            src="./images/holiday cottage.jpg"
+            class="rounded-2xl h-full w-full"
+          />
+          <p class="text-white absolute bottom-0 left-0 p-2 font-semibold">
+            Holiday cottage
+          </p>
+        </div>
+        <div class="relative h-86">
+          <img
+            src="./images/country house.jpg"
+            class="rounded-2xl h-full w-full"
+          />
+          <p class="text-white absolute bottom-0 left-0 p-2 font-semibold">
+            Country house
+          </p>
+        </div>
+        <div class="relative h-86">
+          <img src="./images/villa.jpg" class="rounded-2xl h-full w-full" />
+          <p class="text-white absolute bottom-0 left-0 p-2 font-semibold">
+            Villa
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-7 px-10">
+      <h1 class="text-base md:text-3xl text-blue-950 font-semibold">
+        Browser Weekend trips
+      </h1>
+      <p class="text-sm">
+        Offers for period: <span class="font-bold">Sept. 26-28</span>
+      </p>
+      <div class="mt-5 grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))]  gap-5">
+        <div>
+          <div class="relative">
+            <img
+              src="./images/chalet.jpg"
+              class="brightness-75 rounded-lg h-56 w-full"
+            />
+            <div class="absolute inset-0 flex justify-between items-center">
+              <i
+                class="fa-solid fa-arrow-left rounded-full h-5 w-5 p-1 text-white"
+              ></i>
+              <i
+                class="fa-solid fa-arrow-right rounded-full h-5 w-5 p-1 text-white"
+              ></i>
+            </div>
+          </div>
+          <div class="mt-3 flex">
+            <p
+              class="bg-green-700 h-6 w-6 rounded-sm text-white text-sm text-center"
+            >
+              9,4
+            </p>
+            <p class="font-semibold text-sm px-1">Unusual</p>
+            <p class="text-gray-700 text-xs px-1">(126 reviews)</p>
+          </div>
+          <div class="mt-3">
+            <p class="font-semibold">
+              Luxur.Bauernhaus, mit<br />orig.Rauchkuche,...
+            </p>
+            <p class="text-gray-700 text-sm">Bubsheim, Naturpark obere Donau</p>
+          </div>
+          <div class="mt-3">
+            <p class="font-semibold">348 $</p>
+            <p class="text-gray-700 text-sm">174 $ pro Nacht</p>
+            <p class="text-gray-700 text-sm">Inkl.Steuern & Gerbuhren</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="relative">
+            <img
+              src="./images/chalet.jpg"
+              class="brightness-75 rounded-lg h-56 w-full"
+            />
+            <div class="absolute inset-0 flex justify-between items-center">
+              <i
+                class="fa-solid fa-arrow-left rounded-full h-5 w-5 p-1 text-white"
+              ></i>
+              <i
+                class="fa-solid fa-arrow-right rounded-full h-5 w-5 p-1 text-white"
+              ></i>
+            </div>
+          </div>
+          <div class="mt-3 flex">
+            <p
+              class="bg-green-700 h-6 w-6 rounded-sm text-white text-sm text-center"
+            >
+              9,4
+            </p>
+            <p class="font-semibold text-sm px-1">Aubergewohnlich</p>
+            <p class="text-gray-700 text-xs px-1">(126 Bwertungen)</p>
+          </div>
+          <div class="mt-3">
+            <p class="font-semibold">
+              Luxur.Bauernhaus, mit<br />orig.Rauchkuche,...
+            </p>
+            <p class="text-gray-700 text-sm">Bubsheim, Naturpark obere Donau</p>
+          </div>
+          <div class="mt-3">
+            <p class="font-semibold">348 $</p>
+            <p class="text-gray-700 text-sm">174 $ pro Nacht</p>
+            <p class="text-gray-700 text-sm">Inkl.Steuern & Gerbuhren</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="relative">
+            <img
+              src="./images/chalet.jpg"
+              class="brightness-75 rounded-lg h-56 w-full"
+            />
+            <div class="absolute inset-0 flex justify-between items-center">
+              <i
+                class="fa-solid fa-arrow-left rounded-full h-5 w-5 p-1 text-white"
+              ></i>
+              <i
+                class="fa-solid fa-arrow-right rounded-full h-5 w-5 p-1 text-white"
+              ></i>
+            </div>
+          </div>
+          <div class="mt-3 flex">
+            <p
+              class="bg-green-700 h-6 w-6 rounded-sm text-white text-sm text-center"
+            >
+              9,4
+            </p>
+            <p class="font-semibold text-sm px-1">Aubergewohnlich</p>
+            <p class="text-gray-700 text-xs px-1">(126 Bwertungen)</p>
+          </div>
+          <div class="mt-3">
+            <p class="font-semibold">
+              Luxur.Bauernhaus, mit<br />orig.Rauchkuche,...
+            </p>
+            <p class="text-gray-700 text-sm">Bubsheim, Naturpark obere Donau</p>
+          </div>
+          <div class="mt-3">
+            <p class="font-semibold">348 $</p>
+            <p class="text-gray-700 text-sm">174 $ pro Nacht</p>
+            <p class="text-gray-700 text-sm">Inkl.Steuern & Gerbuhren</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="relative">
+            <img
+              src="./images/chalet.jpg"
+              class="brightness-75 rounded-lg h-56 w-full"
+            />
+            <div class="absolute inset-0 flex justify-between items-center">
+              <i
+                class="fa-solid fa-arrow-left rounded-full h-5 w-5 p-1 text-white"
+              ></i>
+              <i
+                class="fa-solid fa-arrow-right rounded-full h-5 w-5 p-1 text-white"
+              ></i>
+            </div>
+          </div>
+          <div class="mt-3 flex">
+            <p
+              class="bg-green-700 h-6 w-6 rounded-sm text-white text-sm text-center"
+            >
+              9,4
+            </p>
+            <p class="font-semibold text-sm px-1">Aubergewohnlich</p>
+            <p class="text-gray-700 text-xs px-1">(126 Bwertungen)</p>
+          </div>
+          <div class="mt-3">
+            <p class="font-semibold">
+              Luxur.Bauernhaus, mit<br />orig.Rauchkuche,...
+            </p>
+            <p class="text-gray-700 text-sm">Bubsheim, Naturpark obere Donau</p>
+          </div>
+          <div class="mt-3">
+            <p class="font-semibold">348 $</p>
+            <p class="text-gray-700 text-sm">174 $ pro Nacht</p>
+            <p class="text-gray-700 text-sm">Inkl.Steuern & Gerbuhren</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-7 grid grid-cols-1  lg:grid-cols-2 grid-rows-[400px] gap-5 px-10">
+      <div>
+        <img
+          src="./images/holiday home.jpg"
+          class="rounded-2xl h-85 w-full object-cover"
+        />
+        <p class="text-xs md:text-base text-blue-950 font-semibold">
+          ACCOMODATIONS FOR AUTUMN HAPPINESS
+        </p>
+        <p class="text-xs md:text-base text-blue-950 font-medium">
+          Book your private accommodation surrounded by nature
+        </p>
+      </div>
+      <div>
+        <img
+          src="./images/holiday home.jpg"
+          class="rounded-2xl h-85 w-full object-cover"
+        />
+        <p class="text-xs md:text-base text-blue-950 font-semibold">
+          IDYLLIC ISLAND ACCOMODATION
+        </p>
+        <p class="text-xs md:text-base text-blue-950 font-medium">
+          Treat yourself and your loved ones to a little piece of paradise
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-7 px-10">
+      <h1 class="text-xl md:text-3xl text-blue-950 font-semibold py-1">
+        Discover the perfect beach accomodation for you
+      </h1>
+      <p class="text-sm">
+        Offrs for the period: <span class="font-bold">Nov. 22-26</span>
+      </p>
+      <div class="mt-5 grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-5">
+        <div>
+          <div class="relative">
+            <img
+              src="./images/chalet.jpg"
+              class="brightness-75 rounded-lg h-56 w-full"
+            />
+            <div class="absolute inset-0 flex justify-between items-center">
+              <i
+                class="fa-solid fa-arrow-left rounded-full h-5 w-5 p-1 text-white"
+              ></i>
+              <i
+                class="fa-solid fa-arrow-right rounded-full h-5 w-5 p-1 text-white"
+              ></i>
+            </div>
+          </div>
+          <div class="mt-3 flex">
+            <p
+              class="bg-green-700 h-6 w-6 rounded-sm text-white text-sm text-center"
+            >
+              9,4
+            </p>
+            <p class="font-semibold text-sm px-1">Unusual</p>
+            <p class="text-gray-700 text-xs px-1">(50 reviews)</p>
+          </div>
+          <div class="mt-3">
+            <p class="font-semibold">
+              Luxur.Bauernhaus, mit<br />orig.Rauchkuche,...
+            </p>
+            <p class="text-gray-700 text-sm">Bubsheim, Naturpark obere Donau</p>
+          </div>
+          <div class="mt-3">
+            <p class="font-semibold">348 $</p>
+            <p class="text-gray-700 text-sm">174 $ pro Nacht</p>
+            <p class="text-gray-700 text-sm">Inkl.Steuern & Gerbuhren</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="relative">
+            <img
+              src="./images/chalet.jpg"
+              class="brightness-75 rounded-lg h-56 w-full"
+            />
+            <div class="absolute inset-0 flex justify-between items-center">
+              <i
+                class="fa-solid fa-arrow-left rounded-full h-5 w-5 p-1 text-white"
+              ></i>
+              <i
+                class="fa-solid fa-arrow-right rounded-full h-5 w-5 p-1 text-white"
+              ></i>
+            </div>
+          </div>
+          <div class="mt-3 flex">
+            <p
+              class="bg-green-700 h-6 w-6 rounded-sm text-white text-sm text-center"
+            >
+              9,4
+            </p>
+            <p class="font-semibold text-sm px-1">Aubergewohnlich</p>
+            <p class="text-gray-700 text-xs px-1">(126 Bwertungen)</p>
+          </div>
+          <div class="mt-3">
+            <p class="font-semibold">
+              Luxur.Bauernhaus, mit<br />orig.Rauchkuche,...
+            </p>
+            <p class="text-gray-700 text-sm">Bubsheim, Naturpark obere Donau</p>
+          </div>
+          <div class="mt-3">
+            <p class="font-semibold">348 $</p>
+            <p class="text-gray-700 text-sm">174 $ pro Nacht</p>
+            <p class="text-gray-700 text-sm">Inkl.Steuern & Gerbuhren</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="relative">
+            <img
+              src="./images/chalet.jpg"
+              class="brightness-75 rounded-lg h-56 w-full"
+            />
+            <div class="absolute inset-0 flex justify-between items-center">
+              <i
+                class="fa-solid fa-arrow-left rounded-full h-5 w-5 p-1 text-white"
+              ></i>
+              <i
+                class="fa-solid fa-arrow-right rounded-full h-5 w-5 p-1 text-white"
+              ></i>
+            </div>
+          </div>
+          <div class="mt-3 flex">
+            <p
+              class="bg-green-700 h-6 w-6 rounded-sm text-white text-sm text-center"
+            >
+              9,4
+            </p>
+            <p class="font-semibold text-sm px-1">Aubergewohnlich</p>
+            <p class="text-gray-700 text-xs px-1">(126 Bwertungen)</p>
+          </div>
+          <div class="mt-3">
+            <p class="font-semibold">
+              Luxur.Bauernhaus, mit<br />orig.Rauchkuche,...
+            </p>
+            <p class="text-gray-700 text-sm">Bubsheim, Naturpark obere Donau</p>
+          </div>
+          <div class="mt-3">
+            <p class="font-semibold">348 $</p>
+            <p class="text-gray-700 text-sm">174 $ pro Nacht</p>
+            <p class="text-gray-700 text-sm">Inkl.Steuern & Gerbuhren</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="relative">
+            <img
+              src="./images/chalet.jpg"
+              class="brightness-75 rounded-lg h-56 w-full"
+            />
+            <div class="absolute inset-0 flex justify-between items-center">
+              <i
+                class="fa-solid fa-arrow-left rounded-full h-5 w-5 p-1 text-white"
+              ></i>
+              <i
+                class="fa-solid fa-arrow-right rounded-full h-5 w-5 p-1 text-white"
+              ></i>
+            </div>
+          </div>
+          <div class="mt-3 flex">
+            <p
+              class="bg-green-700 h-6 w-6 rounded-sm text-white text-sm text-center"
+            >
+              9,4
+            </p>
+            <p class="font-semibold text-sm px-1">Aubergewohnlich</p>
+            <p class="text-gray-700 text-xs px-1">(126 Bwertungen)</p>
+          </div>
+          <div class="mt-3">
+            <p class="font-semibold">
+              Luxur.Bauernhaus, mit<br />orig.Rauchkuche,...
+            </p>
+            <p class="text-gray-700 text-sm">Bubsheim, Naturpark obere Donau</p>
+          </div>
+          <div class="mt-3">
+            <p class="font-semibold">348 $</p>
+            <p class="text-gray-700 text-sm">174 $ pro Nacht</p>
+            <p class="text-gray-700 text-sm">Inkl.Steuern & Gerbuhren</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mt-7 px-10 ">
+      <div class="mt-5 grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-5">
+        <div class="block justify-center">
+          <h1 class="text-xl md:text-3xl text-blue-950 font-semibold">
+            Find private accomodation that suits you
+          </h1>
+          <p>
+            Want to bring everyone from grandma to baby? Even your furry
+            friends? Discover vacation rentals that meet your needs.
+          </p>
+        </div>
+        <div class="relative h-86">
+          <img
+            src="./images/holiday apartment.jpg"
+            class="rounded-2xl h-full w-full"
+          />
+          <p class="text-white absolute bottom-0 left-0 p-2 font-semibold">
+            Holiday apartment
+          </p>
+        </div>
+        <div class="relative h-86">
+          <img
+            src="./images/holiday cottage.jpg"
+            class="rounded-2xl h-full w-full"
+          />
+          <p class="text-white absolute bottom-0 left-0 p-2 font-semibold">
+            Holiday cottage
+          </p>
+        </div>
+        <div class="relative h-86">
+          <img
+            src="./images/country house.jpg"
+            class="rounded-2xl h-full w-full"
+          />
+          <p class="text-white absolute bottom-0 left-0 p-2 font-semibold">
+            Country house
+          </p>
+        </div>
+        <div class="relative h-86">
+          <img src="./images/villa.jpg" class="rounded-2xl h-full w-full" />
+          <p class="text-white absolute bottom-0 left-0 p-2 font-semibold">
+            Villa
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center relative px-10">
+      <img
+        src="./images/sauna.avif"
+        class="mt-10 h-[450px] w-full object-cover rounded-xl overflow-hidden"
+      />
+      <div
+        class="flex absolute rounded-xl bg-white inset-0 h-64 md:h-72 w-45 md:w-md p-5 top-15 md:top-20 left-12 md:left-30"
+      >
+        <div class="space-y-2">
+          <p class="font-semibold text-sm md:text-3xl">
+            Rent your accommodation with confidence with FeWo-direkt
+          </p>
+          <p class="text-gray-700 text-xs md:text-lg">
+            Real-time support, quick and easy registration, and guests with
+            positive feedback – with FeWo-direkt, hosting feels like a vacation.
+          </p>
+          <button class="text-white bg-blue-700 text-xs  md:text-md p-1 md:p-2 rounded-full">
+            Advertise accommodation
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-7 px-10">
+      <h1 class="text-base md:text-2xl text-blue-950 font-semibold py-2">
+        What is FeWo-direkt?
+      </h1>
+      <p class="text-sm md:text-base">
+        FeWo-direkt is your competent partner for vacations in a vacation home
+        or apartment . As part of Vrbo, one of the leading online marketplaces
+        for vacation rentals, FeWo-direkt offers you more than two million
+        unique accommodations, including fincas, bungalows, apartments, cabins ,
+        and even villas . Secure payments, 24/7 support, and the Book with
+        Confidence Guarantee make booking a breeze. The user-friendly website
+        and numerous practical filters allow you to effortlessly find your dream
+        vacation rental within your budget. This way, you're sure to have an
+        unforgettable vacation, one that's completely stress-free from the
+        search and booking to your stay and departure.
+      </p>
+    </div>
+
+    <div class="mt-7 px-10">
+      <h1 class="text-base md:text-2xl text-blue-950 font-semibold py-2">
+        Renting a holiday apartment or holiday home: These are the advantages
+      </h1>
+      <p class="text-sm md:text-base">
+        Families and groups in particular appreciate the advantages of vacation
+        rentals: more space, more privacy, more amenities. You have more
+        flexibility and freedom in your own four walls than in a traditional
+        hotel and can plan your vacation freely – regardless of whether you want
+        to go on a city break or unwind with your dog amidst picturesque nature.
+        Are you looking for a cozy holiday cabin in the mountains with a washing
+        machine and whirlpool ? A beach house on the water or a large finca in
+        the south with a pool and fully equipped kitchen? No problem, because
+        vacation rentals are available in all sizes and with every desired
+        feature you could want for your next family vacation , adventure trip
+        with friends, or romantic weekend.
+      </p>
+    </div>
+
+    <div class="mt-7 p-10 space-y-7">
+      <p class="text-base md:text-2xl text-blue-950 font-semibold py-3">
+        Popular travel destinations
+      </p>
+      <div class="flex justify-between">
+        <p class="font-semibold text-sm md:text-xl">Top-Reiseziele</p>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <div class="flex justify-between">
+        <p class="font-semibold  text-sm md:text-xl">Einzigartige Unterkünfte</p>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <div class="flex justify-between">
+        <p class="font-semibold text-sm md:text-xl">Trendige Reiseziele im August</p>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <div class="flex justify-between">
+        <p class="font-semibold  text-sm md:text-xl">Top-Reiseziele für Villen</p>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <div class="flex justify-between">
+        <p class="font-semibold  text-sm md:text-xl">Reiseziele für Ferienwohnungen</p>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <div class="flex justify-between">
+        <p class="font-semibold  text-sm md:text-xl">Reisetipps & Inspiration</p>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <div class="flex justify-between">
+        <p class="font-semibold  text-sm md:text-xl">Bleib länger und spare</p>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+    </div>
+
+    <div class="mt-7 px-10">
+      <img src="./images/logo.png" class="h-7" />
+      <div class="mt-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <ul class="space-y-2">
+          <p class="font-semibold text-sm py-4">Explore FeWo-direkt</p>
+          <li class="text-blue-500 text-sm">Advertise accomodation</li>
+          <li class="text-blue-500 text-sm">Book with confidence</li>
+          <li class="text-blue-500 text-sm">Trust and security</li>
+          <li class="text-blue-500 text-sm">Resource for partners</li>
+          <li class="text-blue-500 text-sm">
+            Holiday homes and holiday inspiration
+          </li>
+        </ul>
+
+        <ul class="space-y-2">
+          <p class="font-semibold text-sm py-4">Purse</p>
+          <li class="text-blue-500 text-sm">About Us</li>
+          <li class="text-blue-500 text-sm">career</li>
+          <li class="text-blue-500 text-sm">Affiliate partner</li>
+          <li class="text-blue-500 text-sm">press</li>
+          <li class="text-blue-500 text-sm">
+            General terms and conditions of business
+          </li>
+          <li class="text-blue-500 text-sm">Accessibility</li>
+          <li class="text-blue-500 text-sm">Private policy</li>
+          <li class="text-blue-500 text-sm">Cookie statement</li>
+          <li class="text-blue-500 text-sm">Report illegal content</li>
+          <li class="text-blue-500 text-sm">Legal notice/contact</li>
+          <li class="text-blue-500 text-sm">Responsible owner</li>
+          <li class="text-blue-500 text-sm">
+            Content guidelines and reporting content
+          </li>
+        </ul>
+
+        <ul class="space-y-2">
+          <p class="font-semibold text-sm py-4">The Vrbo family</p>
+          <li class="text-blue-500 text-sm">Vrbo</li>
+          <li class="text-blue-500 text-sm">Abritel.fr</li>
+          <li class="text-blue-500 text-sm">FeWo-direkt.de</li>
+          <li class="text-blue-500 text-sm">Bookabach.co.nz</li>
+          <li class="text-blue-500 text-sm">Stay.com.au</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-5 text-xs text-center p-5">
+      &copy; 20225 HomeAway, an Expedia Group company. All rights reserved.
+      HomeAway and the HomeAway logo are trademarks or registered trademarks of
+      HomeAway.com, Inc.
+    </div>
+  </body>
+</html>
